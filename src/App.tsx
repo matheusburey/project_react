@@ -1,7 +1,7 @@
+import Routes from "./routes";
+
 function App() {
-	return (
-		<div>ola</div>
-	)
+  return <Routes />;
 }
 
 export default App;
