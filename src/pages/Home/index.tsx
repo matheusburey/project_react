@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 import imageHome from "../../assets/imageHome.svg";
 import Button from "../../components/atoms/Button";
+import ColorText from "../../components/atoms/ColorText";
 
 function Home() {
   const navigate = useNavigate();
@@ -10,8 +11,7 @@ function Home() {
       <div className="pt-16 flex justify-around max-w-[1100px] m-auto">
         <div className="max-w-[380px]">
           <h2 className="text-5xl leading-tight">
-            Venha conhecer os planos{" "}
-            <span className="text-orange-600">FaleMais</span>
+            Venha conhecer os planos <ColorText>FaleMais</ColorText>
           </h2>
           <p className="py-5 text-sm">
             conecte-se sem preocupações, sem burocracia, com total
