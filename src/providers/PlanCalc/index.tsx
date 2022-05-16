@@ -27,9 +27,9 @@ export function PlanCalcProvider({ children }: IChildrenProps) {
   const defaultCalc = { value: "", plan: "FaleMais", valuewithplan: "" };
   const [calc, setCalc] = useState<ICalc>(defaultCalc);
 
-  function calculate(data: any) {
-    api
-      .post("calculate", data)
+  async function calculate(data: any) {
+    await api
+      .post("/calculate", data)
       .then((res): void => {
         setCalc(res.data);
       })
