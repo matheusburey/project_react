@@ -8,7 +8,7 @@ function Home() {
   const navigate = useNavigate();
   return (
     <main>
-      <div className="pt-16 flex justify-around max-w-[1100px] m-auto">
+      <div className="pt-16 px-3 flex justify-around max-w-[1100px] m-auto">
         <div className="max-w-[380px]">
           <h2 className="text-5xl leading-tight">
             Venha conhecer os planos <ColorText>FaleMais</ColorText>
@@ -27,6 +27,7 @@ function Home() {
         </div>
         <img
           src={imageHome}
+					className="hidden md:block"
           width="350"
           height="360"
           alt="pessoa com celular"
